@@ -108,8 +108,8 @@ optional arguments:
 askar•/opt/redteaming/ExchangeFinder(main⚡)»                                                                                                                                       
 
 ```
-
-To scan one domain you can use the option `--domain` like the following:
+### Scan single domain
+To scan single domain you can use the option `--domain` like the following:
 
 ```
 askar•/opt/redteaming/ExchangeFinder(main⚡)» python3 exchangefinder.py --domain dummyexchangetarget.com                                                                                           
@@ -152,5 +152,59 @@ askar•/opt/redteaming/ExchangeFinder(main⚡)»
 
 ```
 
-To scan multiple domains (targets) you can use the option `--domains` and choose aa file like the following:
+![Scan Single Domain](screenshots/screenshot1.png)
+
+
+### Scan multiple domains
+To scan multiple domains (targets) you can use the option `--domains` and choose a file like the following:
+
+```
+askar•/opt/redteaming/ExchangeFinder(main⚡)» python3 exchangefinder.py --domains domains.txt                                                                                                          [22:02:11]
+
+    
+    ______     __                           _______           __         
+   / ____/  __/ /_  ____ _____  ____ ____  / ____(_)___  ____/ /__  _____
+  / __/ | |/_/ __ \/ __ `/ __ \/ __ `/ _ \/ /_  / / __ \/ __  / _ \/ ___/
+ / /____>  </ / / / /_/ / / / / /_/ /  __/ __/ / / / / / /_/ /  __/ /    
+/_____/_/|_/_/ /_/\__,_/_/ /_/\__, /\___/_/   /_/_/ /_/\__,_/\___/_/     
+                             /____/                                        
+                                                
+                                                Find that Microsoft Exchange server ..
+    
+[+] Total domains to scan are 2 domains
+[!] Scanning domain externalcompany.com
+	[+] The following MX records found for the main domain
+	20 mx4.linfosyshosting.nl.
+	10 mx3.linfosyshosting.nl.
+
+[!] 	Scanning host (mail.externalcompany.com)
+[+] 	IIS server detected (https://mail.externalcompany.com)
+[!] 	Potential Microsoft Exchange Identified
+[+] 	Microsoft Exchange identified with the following details:
+
+	Domain Found : https://mail.externalcompany.com
+	Exchange version : Exchange Server 2016 CU22 Nov21SU
+	Login page : https://mail.externalcompany.com/owa/auth/logon.aspx?url=https%3a%2f%2fmail.externalcompany.com%2fowa%2f&reason=0
+	IIS/Webserver version: Microsoft-IIS/10.0
+
+[!] Scanning domain o365.cloud
+	[+] The following MX records found for the main domain
+	10 mailstore1.secureserver.net.
+	0 smtp.secureserver.net.
+
+[!] 	Scanning host (mail.o365.cloud)
+[+] 	IIS server detected (https://mail.o365.cloud)
+[!] 	Potential Microsoft Exchange Identified
+[+] 	Microsoft Exchange identified with the following details:
+
+	Domain Found : https://mail.o365.cloud
+	Exchange version : Exchange Server 2013 CU23 May22SU
+	Login page : https://mail.o365.cloud/owa/auth/logon.aspx?url=https%3a%2f%2fmail.o365.cloud%2fowa%2f&reason=0
+	IIS/Webserver version: Microsoft-IIS/8.5
+
+askar•/opt/redteaming/ExchangeFinder(main⚡)»                                                                                                                                                          [22:02:33]
+
+```
+
+![Scan Multiple Domains](screenshots/screenshot2.png)
 

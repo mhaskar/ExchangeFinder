@@ -159,7 +159,7 @@ askar•/opt/redteaming/ExchangeFinder(main⚡)»
 To scan multiple domains (targets) you can use the option `--domains` and choose a file like the following:
 
 ```
-askar•/opt/redteaming/ExchangeFinder(main⚡)» python3 exchangefinder.py --domains domains.txt                                                                                                          [22:02:11]
+askar•/opt/redteaming/ExchangeFinder(main⚡)» python3 exchangefinder.py --domains domains.txt                                                                                                          
 
     
     ______     __                           _______           __         
@@ -202,9 +202,17 @@ askar•/opt/redteaming/ExchangeFinder(main⚡)» python3 exchangefinder.py --do
 	Login page : https://mail.o365.cloud/owa/auth/logon.aspx?url=https%3a%2f%2fmail.o365.cloud%2fowa%2f&reason=0
 	IIS/Webserver version: Microsoft-IIS/8.5
 
-askar•/opt/redteaming/ExchangeFinder(main⚡)»                                                                                                                                                          [22:02:33]
+askar•/opt/redteaming/ExchangeFinder(main⚡)»                                                                                                                                                         
 
 ```
 
 ![Scan Multiple Domains](screenshots/screenshot2.png)
+
+**Please note that the examples used in the screenshots are resolved in the lab only**
+
+This tool is very simple and I was using it to save some time while searching for Microsoft Exchange instances, feel free to open PR if you find any issue or you have a new thing to add.
+
+# License
+
+This project is licensed under the GPL-3.0 License - see the LICENSE file for details
 

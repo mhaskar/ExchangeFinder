@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "ExchangeFinder"
 version = "0.1.0"
-description = ""
+description = "Find Microsoft Exchange instance for a given domain and identify the exact version"
 authors = ["mhaskar"]
 
 [tool.poetry.dependencies]

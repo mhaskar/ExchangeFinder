@@ -3,6 +3,7 @@ name = "ExchangeFinder"
 version = "0.1.0"
 description = ""
 authors = ["mhaskar"]
+license = "GPL-3.0-only"
 
 [tool.poetry.dependencies]
 python = "^3.8"

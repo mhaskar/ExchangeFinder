@@ -1,6 +1,3 @@
-#!/usr/bin/python
-
-
 exchange_version = {
     "15.2.1118.12": "Exchange Server 2019 CU12 Aug22SU",
     "15.2.1118.9": "Exchange Server 2019 CU12 May22SU",

@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 import dns.resolver
 import requests
 import warnings

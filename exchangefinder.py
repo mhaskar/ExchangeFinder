@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 import argparse
 from threading import Thread
 from core.functions import *
